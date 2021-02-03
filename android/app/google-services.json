@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "91437107420",
+    "project_id": "services-app-c58de",
+    "storage_bucket": "services-app-c58de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91437107420:android:85eb204a52465fa00a4c19",
+        "android_client_info": {
+          "package_name": "com.limelocker.services_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91437107420-fuol7ammr6oc53c5pkrqt8q7jghgl67c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgAbizLPFHEBxJd3p2LWGNsvF7lPMKQpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91437107420-fuol7ammr6oc53c5pkrqt8q7jghgl67c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
