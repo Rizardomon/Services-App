@@ -3,6 +3,75 @@ import 'package:flutter/material.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Selecione seu local'),
+        backgroundColor: Colors.green,
+        actions: [
+          IconButton(
+            icon: Icon(Icons.map),
+            onPressed: () => _showDialog(context),
+          ),
+        ],
+      ),
+    );
   }
+}
+
+_showDialog(BuildContext context) {
+  Size size = MediaQuery.of(context).size;
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: Text('Sua localização não está disponível'),
+        content: Container(
+          height: size.height * 0.25,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Infelizmente não foi possível determinar sua posição atual. Digite o número QrCode do seu Armário:',
+              ),
+              TextField(
+                decoration: InputDecoration(labelText: 'N° do Armário'),
+              ),
+              SizedBox(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    RaisedButton(
+                      color: Colors.white,
+                      elevation: 0,
+                      child: Text(
+                        'Ok',
+                        style: TextStyle(
+                          color: Colors.green,
+                        ),
+                      ),
+                      onPressed: () {},
+                    ),
+                    RaisedButton(
+                      color: Colors.white,
+                      elevation: 0,
+                      child: Text(
+                        'Cancelar',
+                        style: TextStyle(
+                          color: Colors.green,
+                        ),
+                      ),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+    },
+  );
 }
