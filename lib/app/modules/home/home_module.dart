@@ -1,5 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:services_app/app/modules/place/place_module.dart';
 import 'package:services_app/app/repositories/place_repository.dart';
 import 'package:services_app/app/repositories/place_repository_interface.dart';
 
@@ -19,7 +18,6 @@ class HomeModule extends ChildModule {
   @override
   List<ModularRouter> get routers => [
         ModularRouter(Modular.initialRoute, child: (_, args) => HomePage()),
-        ModularRouter('/place', module: PlaceModule()),
       ];
 
   static Inject get to => Inject<HomeModule>.of();

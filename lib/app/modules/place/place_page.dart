@@ -26,7 +26,9 @@ class _PlacePageState extends ModularState<PlacePage, PlaceController> {
           Card(
             margin: EdgeInsets.all(20),
             child: ListTile(
-              onTap: () {},
+              onTap: () {
+                Modular.to.pushReplacementNamed('/collect');
+              },
               title: Text(
                 'Lime Clean',
                 textAlign: TextAlign.center,

@@ -55,7 +55,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                 margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 child: ListTile(
                   onTap: () {
-                    Modular.to.pushNamed('/place');
+                    Modular.to.pushReplacementNamed('/place');
                   },
                   title: Text(model.address),
                 ),
