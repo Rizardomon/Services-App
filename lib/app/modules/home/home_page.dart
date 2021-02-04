@@ -54,7 +54,9 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
               return Card(
                 margin: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 child: ListTile(
-                  onTap: () {},
+                  onTap: () {
+                    Modular.to.pushNamed('/place');
+                  },
                   title: Text(model.address),
                 ),
               );
