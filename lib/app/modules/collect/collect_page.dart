@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:services_app/app/models/place_model.dart';
 import 'collect_controller.dart';
 
 class CollectPage extends StatefulWidget {
@@ -13,7 +14,9 @@ class CollectPage extends StatefulWidget {
 
 class _CollectPageState extends ModularState<CollectPage, CollectController> {
   //use 'controller' variable to access controller
+
   String qrCode = '';
+  PlaceModel model;
   var txt = TextEditingController();
   @override
   Widget build(BuildContext context) {
@@ -36,14 +39,19 @@ class _CollectPageState extends ModularState<CollectPage, CollectController> {
                       "https://www.limelocker.com.br/assets/images/logo-limelocker-linkedin-1-192x187.png"),
                 ),
               ),
-              flatButton("Clique para escanear QR Code do Locker"),
-              SizedBox(
-                height: 20,
-              ),
-              Text(
-                'Ou',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              FlatButton(
+                padding: EdgeInsets.all(15.0),
+                onPressed: () {
+                  scanQRCode();
+                },
+                child: Text(
+                  'Escaneie o QRcode indicado',
+                  style: TextStyle(
+                      color: Colors.green, fontWeight: FontWeight.bold),
+                ),
+                shape: RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.green, width: 3.0),
+                    borderRadius: BorderRadius.circular(20.0)),
               ),
               SizedBox(
                 height: 20,
@@ -60,10 +68,12 @@ class _CollectPageState extends ModularState<CollectPage, CollectController> {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 20,
               ),
               RaisedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Modular.to.pushReplacementNamed('/place');
+                },
                 elevation: 0,
                 color: Colors.green,
                 padding: EdgeInsets.symmetric(horizontal: 60),
@@ -112,23 +122,10 @@ class _CollectPageState extends ModularState<CollectPage, CollectController> {
       setState(() {
         this.qrCode = qrCode;
         txt.text = qrCode;
+        controller.repository.reserveLocker();
       });
     } on PlatformException {
       qrCode = 'Failed to get platform version.';
     }
-  }
-
-  Widget flatButton(String text) {
-    return FlatButton(
-      padding: EdgeInsets.all(15.0),
-      onPressed: () => scanQRCode(),
-      child: Text(
-        text,
-        style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),
-      ),
-      shape: RoundedRectangleBorder(
-          side: BorderSide(color: Colors.green, width: 3.0),
-          borderRadius: BorderRadius.circular(20.0)),
-    );
   }
 }

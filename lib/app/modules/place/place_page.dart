@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'place_controller.dart';
@@ -21,21 +22,25 @@ class _PlacePageState extends ModularState<PlacePage, PlaceController> {
         title: Text('Selecione o serviço desejado'),
         backgroundColor: Colors.green,
       ),
-      body: ListView(
-        children: [
-          Card(
-            margin: EdgeInsets.all(20),
-            child: ListTile(
-              onTap: () {
-                Modular.to.pushReplacementNamed('/collect');
-              },
-              title: Text(
-                'Lime Clean',
-                textAlign: TextAlign.center,
+      body: Observer(
+        builder: (_) {
+          return ListView(
+            children: [
+              Card(
+                margin: EdgeInsets.all(20),
+                child: ListTile(
+                  onTap: () {
+                    Modular.to.pushReplacementNamed('/collect');
+                  },
+                  title: Text(
+                    'Lime Clean',
+                    textAlign: TextAlign.center,
+                  ),
+                ),
               ),
-            ),
-          )
-        ],
+            ],
+          );
+        },
       ),
     );
   }

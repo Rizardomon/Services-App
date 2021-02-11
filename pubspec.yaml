@@ -17,7 +17,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 version: 1.0.0+1
 
-## Slidy Scripts 
+## Slidy Scripts
 vars:
   clean: flutter clean
   get: flutter pub get
@@ -28,7 +28,7 @@ scripts:
   mobx_build_clean: $clean & $get & $runner build --delete-conflicting-outputs
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.7.0 <3.0.0'
 
 dependencies:
   flutter:
@@ -39,6 +39,7 @@ dependencies:
   flutter_barcode_scanner: ^1.0.2
   flutter_mobx: ^1.1.0+2
   flutter_modular: ^2.0.1
+  http: ^0.12.0
   mobx: ^1.2.1+4
 
 dev_dependencies:
@@ -46,14 +47,11 @@ dev_dependencies:
     sdk: flutter
   build_runner: ^1.10.1
   mobx_codegen: ^1.1.2
-  mockito: ^4.1.4
-  modular_codegen: ^2.1.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

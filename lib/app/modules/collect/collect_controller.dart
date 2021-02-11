@@ -1,5 +1,6 @@
 import 'package:mobx/mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:services_app/app/repositories/place_repository_interface.dart';
 
 part 'collect_controller.g.dart';
 
@@ -7,11 +8,7 @@ part 'collect_controller.g.dart';
 class CollectController = _CollectControllerBase with _$CollectController;
 
 abstract class _CollectControllerBase with Store {
-  @observable
-  int value = 0;
+  final IPlaceRepository repository;
 
-  @action
-  void increment() {
-    value++;
-  }
+  _CollectControllerBase(this.repository);
 }

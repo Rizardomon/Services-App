@@ -6,7 +6,7 @@ import 'collect_page.dart';
 class CollectModule extends ChildModule {
   @override
   List<Bind> get binds => [
-        Bind((i) => CollectController()),
+        Bind((i) => CollectController(i.get())),
       ];
 
   @override

@@ -1,5 +1,8 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:services_app/app/modules/collect/collect_module.dart';
 import 'package:services_app/app/modules/place/place_module.dart';
+import 'package:services_app/app/repositories/place_repository.dart';
+import 'package:services_app/app/repositories/place_repository_interface.dart';
 
 import 'app_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
@@ -11,6 +14,8 @@ class AppModule extends MainModule {
   @override
   List<Bind> get binds => [
         Bind((i) => AppController()),
+        Bind<IPlaceRepository>(
+            (i) => PlaceRepository(FirebaseFirestore.instance)),
       ];
 
   @override
