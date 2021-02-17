@@ -72,7 +72,8 @@ class _CollectPageState extends ModularState<CollectPage, CollectController> {
               ),
               RaisedButton(
                 onPressed: () {
-                  Modular.to.pushReplacementNamed('/place');
+                  // Modular.to.pushReplacementNamed('/place');
+                  controller.repository.reserveLocker(model);
                 },
                 elevation: 0,
                 color: Colors.green,
@@ -122,7 +123,7 @@ class _CollectPageState extends ModularState<CollectPage, CollectController> {
       setState(() {
         this.qrCode = qrCode;
         txt.text = qrCode;
-        controller.repository.reserveLocker();
+        controller.repository.reserveLocker(model);
       });
     } on PlatformException {
       qrCode = 'Failed to get platform version.';

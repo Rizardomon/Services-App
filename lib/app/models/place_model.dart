@@ -32,15 +32,6 @@ class PlaceModel {
     );
   }
 
-  PlaceModel.fromJson(Map<String, dynamic> json) {
-    placeName = json['placeName'];
-    lockerSize = json['lockerSize'];
-    bookingNumber = json['bookingNumber'];
-    document = json['document'];
-    supplierNumber = json['supplierNumber'];
-    companyId = json['companyId'];
-  }
-
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['placeName'] = this.placeName;

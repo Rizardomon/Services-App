@@ -8,7 +8,8 @@ import 'dart:convert';
 
 class PlaceRepository implements IPlaceRepository {
   final FirebaseFirestore firestore;
-
+  final placeCollection =
+      FirebaseFirestore.instance.collection('service_places');
   PlaceRepository(this.firestore);
 
   @override
@@ -21,9 +22,10 @@ class PlaceRepository implements IPlaceRepository {
   }
 
   @override
-  Future<Post> reserveLocker() async {
+  Future<Post> reserveLocker(PlaceModel model) async {
     final String _domain = "https://limeapidev2.herokuapp.com/api";
     final _accessToken = "r:d16d32564372416592dbeda45108f292";
+
     try {
       var response = await http.post(
         _domain + "/booklocker/LimeClean",
@@ -31,14 +33,16 @@ class PlaceRepository implements IPlaceRepository {
           "X-Parse-Session-Token": _accessToken,
           "Content-Type": "application/json",
         },
-        body: jsonEncode({
-          "placeName": "Teste 1 X",
-          "lockerSize": "2",
-          "nrOfDays": "3",
-          "document": "12345678909",
-          "supplierNumber": "12345678",
-          "companyId": "001"
-        }),
+        body: jsonEncode(
+          {
+            "placeName": "Teste 1 X",
+            "lockerSize": "2",
+            "nrOfDays": "3",
+            "document": "12345678909",
+            "supplierNumber": "12345678",
+            "companyId": "001"
+          },
+        ),
       );
       var locker;
       if (response.statusCode == 200) {
@@ -46,7 +50,7 @@ class PlaceRepository implements IPlaceRepository {
       } else {
         throw Exception('Erro ao fazer reserva');
       }
-      print(locker);
+      print(response.body);
       return locker;
     } catch (e) {
       rethrow;
