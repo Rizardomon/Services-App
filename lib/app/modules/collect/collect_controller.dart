@@ -20,6 +20,6 @@ abstract class _CollectControllerBase with Store {
 
   @action
   getList() {
-    placeList = repository.reserveLocker(placeList).asObservable();
+    // placeList = repository.reserveLocker(placeList).asObservable();
   }
 }

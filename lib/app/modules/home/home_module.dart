@@ -11,8 +11,7 @@ class HomeModule extends ChildModule {
   @override
   List<Bind> get binds => [
         Bind((i) => HomeController(i.get())),
-        Bind<IPlaceRepository>(
-            (i) => PlaceRepository(FirebaseFirestore.instance)),
+        Bind<IPlaceRepository>((i) => PlaceRepository(Firestore.instance)),
       ];
 
   @override

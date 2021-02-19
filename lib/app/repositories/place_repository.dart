@@ -7,15 +7,14 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 class PlaceRepository implements IPlaceRepository {
-  final FirebaseFirestore firestore;
-  final placeCollection =
-      FirebaseFirestore.instance.collection('service_places');
+  final Firestore firestore;
+  final placeCollection = Firestore.instance.collection('service_places');
   PlaceRepository(this.firestore);
 
   @override
   Stream<List<PlaceModel>> getPlaces() {
     return firestore.collection('service_places').snapshots().map((query) {
-      return query.docs.map((doc) {
+      return query.documents.map((doc) {
         return PlaceModel.fromDocument(doc);
       }).toList();
     });
