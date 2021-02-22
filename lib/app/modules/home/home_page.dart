@@ -57,7 +57,7 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
                   onTap: () {
                     Modular.to.pushReplacementNamed('/place');
                   },
-                  title: Text(model.placeName),
+                  title: Text(model.name),
                 ),
               );
             });

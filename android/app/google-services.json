@@ -1,34 +1,270 @@
 {
   "project_info": {
-    "project_number": "91437107420",
-    "project_id": "services-app-c58de",
-    "storage_bucket": "services-app-c58de.appspot.com"
+    "project_number": "1065372289132",
+    "firebase_url": "https://lime2.firebaseio.com",
+    "project_id": "firebase-lime2",
+    "storage_bucket": "firebase-lime2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:91437107420:android:85eb204a52465fa00a4c19",
+        "mobilesdk_app_id": "1:1065372289132:android:dbab8c8bf64a0a97a3b049",
         "android_client_info": {
-          "package_name": "com.limelocker.services_app"
+          "package_name": "br.com.limelocker.limelockerapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "91437107420-fuol7ammr6oc53c5pkrqt8q7jghgl67c.apps.googleusercontent.com",
+          "client_id": "1065372289132-cjg172l1pc6kko470fdoqrh4qiaqdnor.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.limelocker.limelockerapp",
+            "certificate_hash": "adad4df636c505d7ac25fbcd92a829f052f1ea6f"
+          }
+        },
+        {
+          "client_id": "1065372289132-daammq78k8qdv0jgncpicp5omf7vnl69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.limelocker.limelockerapp",
+            "certificate_hash": "ec4a0d99eb75c345b09cab2fc0ad81161cc545aa"
+          }
+        },
+        {
+          "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCgAbizLPFHEBxJd3p2LWGNsvF7lPMKQpU"
+          "current_key": "AIzaSyCH3PUFEA8m5QIRtaLCjTbmiXyWUNR87Xc"
+        },
+        {
+          "current_key": "AIzaSyAkApLO8Zfy9ykIUXO3FA2NyjgP9Ki-hQc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "91437107420-fuol7ammr6oc53c5pkrqt8q7jghgl67c.apps.googleusercontent.com",
+              "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "1065372289132-hoghkdn6lpev76cun9a5vundvde7cskb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.limelocker.limelockerapp",
+                "app_store_id": "693816337"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065372289132:android:45cad835e4517af4a3b049",
+        "android_client_info": {
+          "package_name": "br.com.limelocker.mind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH3PUFEA8m5QIRtaLCjTbmiXyWUNR87Xc"
+        },
+        {
+          "current_key": "AIzaSyAkApLO8Zfy9ykIUXO3FA2NyjgP9Ki-hQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1065372289132-hoghkdn6lpev76cun9a5vundvde7cskb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.limelocker.limelockerapp",
+                "app_store_id": "693816337"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065372289132:android:303633510c61d3eda3b049",
+        "android_client_info": {
+          "package_name": "br.com.limelocker.pudo_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH3PUFEA8m5QIRtaLCjTbmiXyWUNR87Xc"
+        },
+        {
+          "current_key": "AIzaSyAkApLO8Zfy9ykIUXO3FA2NyjgP9Ki-hQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1065372289132-hoghkdn6lpev76cun9a5vundvde7cskb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.limelocker.limelockerapp",
+                "app_store_id": "693816337"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065372289132:android:7c497dcb053de288a3b049",
+        "android_client_info": {
+          "package_name": "com.crud.limelocker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065372289132-mdleofmtg53ekph0eputve4ugm38hcks.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crud.limelocker",
+            "certificate_hash": "148af3f104864e16bf60bc0161ca9eb2241de397"
+          }
+        },
+        {
+          "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH3PUFEA8m5QIRtaLCjTbmiXyWUNR87Xc"
+        },
+        {
+          "current_key": "AIzaSyAkApLO8Zfy9ykIUXO3FA2NyjgP9Ki-hQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1065372289132-hoghkdn6lpev76cun9a5vundvde7cskb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.limelocker.limelockerapp",
+                "app_store_id": "693816337"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065372289132:android:d3f1022f93f9479aa3b049",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH3PUFEA8m5QIRtaLCjTbmiXyWUNR87Xc"
+        },
+        {
+          "current_key": "AIzaSyAkApLO8Zfy9ykIUXO3FA2NyjgP9Ki-hQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1065372289132-hoghkdn6lpev76cun9a5vundvde7cskb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.limelocker.limelockerapp",
+                "app_store_id": "693816337"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065372289132:android:1d903b5f130b2c50a3b049",
+        "android_client_info": {
+          "package_name": "com.limelocker.services_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH3PUFEA8m5QIRtaLCjTbmiXyWUNR87Xc"
+        },
+        {
+          "current_key": "AIzaSyAkApLO8Zfy9ykIUXO3FA2NyjgP9Ki-hQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065372289132-4gtiatpcm0r8p2c5a30m8c90p41lvca6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1065372289132-hoghkdn6lpev76cun9a5vundvde7cskb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.limelocker.limelockerapp",
+                "app_store_id": "693816337"
+              }
             }
           ]
         }
